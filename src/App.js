@@ -5,6 +5,7 @@ import Navigation from './components/Navigation/Navigation'
 import FaceRecognition from './components/FaceRecognition/FaceRecognition'
 import Clarifai from 'clarifai'
 import Logo from './components/Logo/Logo'
+import SignIn from './components/SignIn/SignIn'
 import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm'
 import Rank from './components/Rank/Rank'
 
@@ -73,6 +74,7 @@ class App extends Component {
             params={particlesOptions}
           />
         <Navigation />
+        <SignIn />
         <Logo />
         <Rank />
         <ImageLinkForm onInputChange={this.onInputChange} onButtonSubmit={this.onSubmit}/>
